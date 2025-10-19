@@ -1,0 +1,16 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    venv,
+    .venv,
+    admin.py,
+    models.py,
+    tests.py,
+    views.py,
+    migrations,
+    static,
+    media,
+    node_modules
+max-line-length = 88
+extend-ignore = E203, W503
