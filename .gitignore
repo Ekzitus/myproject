@@ -1,0 +1,77 @@
+# .gitignore для Django проекта
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# virtualenvs
+.env
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Django specific
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/       # результат collectstatic
+local_settings.py
+*.log
+
+# Logs and runtime files
+*.log
+logs/
+django-debug.log
+*.pid
+celerybeat-schedule
+
+# Test / coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# Type checkers / caches
+.mypy_cache/
+.cache/
+.tox/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node / frontend
+node_modules/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+
+# Environment files (secrets)
+.env*
+.env.* 
+
+# Misc
+*.egg
+*.whl
