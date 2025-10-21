@@ -9,6 +9,8 @@ __pycache__/
 *.so
 
 # virtualenvs
+.env.dev
+.env.prod
 .env
 .venv/
 venv/
