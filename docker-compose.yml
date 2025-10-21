@@ -10,15 +10,4 @@ services:
     ports:
       - "8000:8000"
     env_file:
-      - .env
-  nginx:
-    image: nginx:latest
-    container_name: nginx_proxy
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d
-      - ./static:/app/static
-      - ./media:/app/media
-    depends_on:
-      - web
+      - .env.dev
