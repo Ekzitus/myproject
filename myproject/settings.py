@@ -28,6 +28,8 @@ DEBUG = config("DEBUG", cast=bool)
 
 ALLOWED_HOSTS = ["217.26.25.97"]
 
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
 
 # Application definition
 
