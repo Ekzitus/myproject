@@ -28,7 +28,7 @@ export DOCKER_COMPOSE_TELEMETRY_DISABLED=1
 
 # --- 3. Очистка старых контейнеров и томов ---
 echo "Останавливаем и удаляем старые контейнеры..."
-docker compose -f $COMPOSE_FILE down -v || true
+docker compose -f $COMPOSE_FILE down || true
 
 # --- 4. Сборка и запуск контейнеров ---
 echo "Собираем образы и запускаем контейнеры..."
