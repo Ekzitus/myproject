@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 @login_required
 def index(request):
-    return render(request, "index.html", {"message": "Hello World!"})
+    return render(request, "myapp/index.html", {"message": "Hello World!"})

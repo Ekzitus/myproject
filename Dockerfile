@@ -2,8 +2,8 @@
 FROM python:3.12-slim
 
 # Устанавливаем переменные окружения
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 # Создаём рабочую директорию
 WORKDIR /app
